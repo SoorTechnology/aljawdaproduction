@@ -246,8 +246,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-6"/>
-                        <div class="col-6">
+                        <div class="col-7"/>
+                        <div class="col-5">
                             <p class="text-right" style="font-size: 13px;">
                                 أقر أنا الموقع أدناه بأنني إستلمت البضاعة المذكورة أعلاه كاملة العدد و بحالة جيدة
 وأتعهد بعدم الإعتراض مستقبلا على الأسعار والأعداد المذكورة ، و أن أقوم بتسديد
@@ -263,8 +263,8 @@
                         <div class="col-5 text-right text-nowrap"><span>Receiver Name……………….………………إسم المستلم</span></div>
                     </div><br/><br/><br/>
                     <div class="row">
-                        <div class="col-6"/>
-                        <div class="col-6 text-nowrap text-right"><span>Signature …………………….………………… التوقيع</span></div>
+                        <div class="col-7"/>
+                        <div class="col-5 text-nowrap text-right"><span>Signature …………………….………………… التوقيع</span></div>
                     </div>
                 </div>
             </div>
