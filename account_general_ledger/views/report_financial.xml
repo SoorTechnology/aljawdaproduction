@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="main_template_inherit_001" inherit_id="account_reports.main_template">
+		<xpath expr="//div[hasclass('o_account_reports_header')]" position="replace">
+			<t t-if="model._name == 'account.partner.ledger'">
+				<!-- <div class="row">
+					<h5 class="col-12 text-center mb8">Vendor / Customer Statement</h5>
+				</div> -->
+				<div class="row" style="font-size: 16px;">
+					<div class="col-4" style="">
+						<p>فاتـــــــــــورة نقدا/بالحساب </p>
+						<p>Statement of Account</p>
+					</div>
+					<div class="col-2 pull-right text-right">
+						<img class="text-right pull-right" src="/account_general_ledger/static/src/img/logo.jpeg" style="width:75px;"/>
+					</div>
+					<div class="col-6 pull-right">
+						<p class="pull-right text-right">شركــــــــــة الجـــــــودة الكويتية للمواد الغذائية والخضار والفواكــــــــــــــــــــــــــــــــــــــــــــه</p>
+						<p class="pull-right text-right">Al-Jawda Al-Kuwaitiya for food Stuff &amp; Vegetables and Fruit</p>
+					</div>
+				</div>
+			</t>
+			<t t-else="">
+				<div class="o_account_reports_header">
+					<div class="print_only"><h2><t t-esc="report.get('name')"></t></h2></div>
+					<t t-if="model._name == 'account.general.ledger'">
+						<div class="o_account_reports_filter_input_wrapper no_print">
+							<span class="searchIcon"><i class="fa fa-search" role="img" aria-label="Search" title="Search"></i></span>
+							<input class="o_account_reports_filter_input" type="text" placeholder="Search account" />
+						</div>
+					</t>
+					<t t-call="account_reports.filter_info_template"/>
+				</div>
+			</t>
+		</xpath>
+	</template>
+	
+	<template id="account_reports_footer_extend">
+		<div class="row" style="margin-top:-80px;">
+			<div class="col-12" style="text-align: right;padding-left: 15px;padding-right: 35px;font-size: 16px;">
+				<p>أقر أنا الموقع أدناه بأنني إستلمت البضاعة المذكورة أعلاه كاملة العدد و بحالة جيدة  </p>
+				<p>وأتعهد بعدم الإعتراض مستقبلا على الأسعار والأعداد المذكورة ، و أن أقوم بتسديد </p>
+				<p>قيمة الفاتورة فورا عند الطلب </p>
+			</div>
+		</div>
+		<div class="row" style="margin-top:32px;">
+				<div class="col-2" style="text-alig:center;">
+					<h6>Approved byموافقة </h6>
+				</div>
+				<div class="col-3">
+					<h6 class="text-center">Accountant………………………     المحاسب</h6>  
+				</div>
+				<div class="col-3">
+					<h6 class="text-center">Prepared by………………………إعداد </h6>
+				</div>
+				<div class="col-4">
+					<h6> Receiver Name ………………………………………     إسم المستلم</h6>
+					<h6 style="margin-top:50px;">Signature …………....…………………………………   التوقيـــــــع   </h6>
+				</div>
+		</div>
+		<div class="row" style="margin-top:16px;">
+			<div class="col-12">
+					<h6 class="text-center">صبحان الصناعية قطعة (1) – شارع (14) – قسيمة (145 </h6>
+				</div>
+		</div>
+		<div class="row" style="margin-top:32px;">
+			<div class="col-3">
+				<h6>+965 22204279</h6>
+			</div>
+			<div class="col-2">
+				<h6 class="text-center">info@aljawdakw.com </h6>  
+			</div>
+			<div class="col-3">
+				<h6 class="text-center">info@aljawdakw.com   </h6>
+			</div>
+			<div class="col-4">
+				<h6 class="text-right"> www.aljawdakw.com    </h6>
+			</div>
+		</div>
+	</template>
+</odoo>
