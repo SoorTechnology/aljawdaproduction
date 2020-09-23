@@ -16,7 +16,7 @@
 						<center><img class="rounded-circle" t-if="company_id.logo" t-att-src="image_data_uri(company_id.logo)" style="width:75px;"/></center>
 					</div>
 					<div class="col-6" style="text-align:right;">
-						<p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكـــــــــــــــــــــــــــه </p>
+						<p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكــــــــــــــــــــــــه </p>
 						<p class="text-right text-nowrap" style="font-size: 15px;">Al-Jawda Al-Kuwaitiya for food Stuff and Vegetables and Fruit</p>
 					</div>
 <!--					<div class="col-4" style="">-->
@@ -68,7 +68,7 @@
 			</div>
 			<div class="col-4" style="text-align: right;">
 				<h6 class="text-nowrap">Receiver Name ………………………………………… إسم المستلم</h6>
-				<h6 class="text-nowrap" style="margin-top:50px;">Signature ………………………………………………………… التوقيع</h6>
+				<h6 class="text-nowrap" style="margin-top:50px;">Signature ………………………………………………………………… التوقيع</h6>
 			</div>
 		</div>
 		<div class="row" style="margin-top:16px;">
