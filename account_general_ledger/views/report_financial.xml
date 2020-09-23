@@ -7,17 +7,28 @@
 					<h5 class="col-12 text-center mb8">Vendor / Customer Statement</h5>
 				</div> -->
 				<div class="row" style="font-size: 16px;">
-					<div class="col-4" style="">
-						<p>فاتـــــــــــورة نقدا/بالحساب </p>
-						<p>Statement of Account</p>
+					<div class="col-3">
+						<center><p style="font-size: 16px;">فاتـورة نقدا/بالحساب</p>
+						<p style="font-size: 17px;">Cash/Credit Invoice</p></center>
 					</div>
-					<div class="col-2 pull-right text-right">
-						<img class="text-right pull-right" src="/account_general_ledger/static/src/img/logo.jpeg" style="width:75px;"/>
+					<div class="col-3" style="text-align:center;">
+						<center><img class="rounded-circle" t-if="user.company_id.logo" t-att-src="image_data_uri(user.company_id.logo)" style="max-height:120px; max-width:310px;"/></center>
 					</div>
-					<div class="col-6 pull-right">
-						<p class="pull-right text-right">شركــــــــــة الجـــــــودة الكويتية للمواد الغذائية والخضار والفواكــــــــــــــــــــــــــــــــــــــــــــه</p>
-						<p class="pull-right text-right">Al-Jawda Al-Kuwaitiya for food Stuff &amp; Vegetables and Fruit</p>
+					<div class="col-6" style="text-align:right;">
+						<p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكـــــــــــــــــــــه </p>
+						<p class="text-right text-nowrap" style="font-size: 15px;">Al-Jawda Al-Kuwaitiya for food Stuff and Vegetables and Fruit</p>
 					</div>
+<!--					<div class="col-4" style="">-->
+<!--						<p>فاتـــــــــــورة نقدا/بالحساب </p>-->
+<!--						<p>Statement of Account</p>-->
+<!--					</div>-->
+<!--					<div class="col-2 pull-right text-right">-->
+<!--						<img class="text-right pull-right" src="/account_general_ledger/static/src/img/logo.jpeg" style="width:75px;"/>-->
+<!--					</div>-->
+<!--					<div class="col-6 pull-right">-->
+<!--						<p class="pull-right text-right">شركــــــــــة الجـــــــودة الكويتية للمواد الغذائية والخضار والفواكــــــــــــــــــــــــــــــــــــــــــــه</p>-->
+<!--						<p class="pull-right text-right">Al-Jawda Al-Kuwaitiya for food Stuff &amp; Vegetables and Fruit</p>-->
+<!--					</div>-->
 				</div>
 			</t>
 			<t t-else="">
