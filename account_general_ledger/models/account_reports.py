@@ -33,4 +33,10 @@ class AccountReport(models.AbstractModel):
             return html
         else:
             return super(AccountReport, self).get_html_footnotes(footnotes=footnotes)
-    
+
+
+class AccountPartnerLedger(models.AbstractModel):
+    _inherit = 'account.partner.ledger'
+
+    def get_user_company_id(self):
+        return self.env.user.company_id

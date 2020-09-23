@@ -7,15 +7,16 @@
 					<h5 class="col-12 text-center mb8">Vendor / Customer Statement</h5>
 				</div> -->
 				<div class="row" style="font-size: 16px;">
-					<div class="col-3">
-						<center><p style="font-size: 16px;">فاتـورة نقدا/بالحساب</p>
-						<p style="font-size: 17px;">Cash/Credit Invoice</p></center>
+					<div class="col-3" style="">
+						<p>فاتـــــــــــورة نقدا/بالحساب </p>
+						<p>Statement of Account</p>
 					</div>
+					<t t-set="company_id" t-value="model.get_user_company_id()"/>
 					<div class="col-3" style="text-align:center;">
-						<center><img class="rounded-circle" t-if="user.company_id.logo" t-att-src="image_data_uri(user.company_id.logo)" style="max-height:120px; max-width:310px;"/></center>
+						<center><img class="rounded-circle" t-if="company_id.logo" t-att-src="image_data_uri(company_id.logo)" style="width:75px;"/></center>
 					</div>
 					<div class="col-6" style="text-align:right;">
-						<p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكـــــــــــــــــــــه </p>
+						<p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكـــــــــــــــــــــــــــه </p>
 						<p class="text-right text-nowrap" style="font-size: 15px;">Al-Jawda Al-Kuwaitiya for food Stuff and Vegetables and Fruit</p>
 					</div>
 <!--					<div class="col-4" style="">-->
@@ -29,7 +30,7 @@
 <!--						<p class="pull-right text-right">شركــــــــــة الجـــــــودة الكويتية للمواد الغذائية والخضار والفواكــــــــــــــــــــــــــــــــــــــــــــه</p>-->
 <!--						<p class="pull-right text-right">Al-Jawda Al-Kuwaitiya for food Stuff &amp; Vegetables and Fruit</p>-->
 <!--					</div>-->
-				</div>
+				</div><br/><br/><br/>
 			</t>
 			<t t-else="">
 				<div class="o_account_reports_header">
@@ -48,26 +49,27 @@
 	
 	<template id="account_reports_footer_extend">
 		<div class="row" style="margin-top:-80px;">
-			<div class="col-12" style="text-align: right;padding-left: 15px;padding-right: 35px;font-size: 16px;">
-				<p>أقر أنا الموقع أدناه بأنني إستلمت البضاعة المذكورة أعلاه كاملة العدد و بحالة جيدة  </p>
-				<p>وأتعهد بعدم الإعتراض مستقبلا على الأسعار والأعداد المذكورة ، و أن أقوم بتسديد </p>
-				<p>قيمة الفاتورة فورا عند الطلب </p>
+			<div class="col-8"/>
+			<div class="col-4" style="text-align: right;font-size: 13px;">
+				<p>أقر أنا الموقع أدناه بأنني إستلمت البضاعة المذكورة أعلاه كاملة العدد و بحالة جيدة
+				وأتعهد بعدم الإعتراض مستقبلا على الأسعار والأعداد المذكورة ، و أن أقوم بتسديد
+					قيمة الفاتورة فورا عند الطلب </p>
 			</div>
 		</div>
 		<div class="row" style="margin-top:32px;">
-				<div class="col-2" style="text-alig:center;">
-					<h6>Approved byموافقة </h6>
-				</div>
-				<div class="col-3">
-					<h6 class="text-center">Accountant………………………     المحاسب</h6>  
-				</div>
-				<div class="col-3">
-					<h6 class="text-center">Prepared by………………………إعداد </h6>
-				</div>
-				<div class="col-4">
-					<h6> Receiver Name ………………………………………     إسم المستلم</h6>
-					<h6 style="margin-top:50px;">Signature …………....…………………………………   التوقيـــــــع   </h6>
-				</div>
+			<div class="col-2 text-nowrap" style="text-align:center;">
+				<h6>Approved byموافقة </h6>
+			</div>
+			<div class="col-3">
+				<h6 class="text-center text-nowrap">Accountant……………………… المحاسب</h6>
+			</div>
+			<div class="col-3">
+				<h6 class="text-center text-nowrap">Prepared by………………………إعداد </h6>
+			</div>
+			<div class="col-4" style="text-align: right;">
+				<h6 class="text-nowrap">Receiver Name ………………………………………… إسم المستلم</h6>
+				<h6 class="text-nowrap" style="margin-top:50px;">Signature ………………………………………………………… التوقيع</h6>
+			</div>
 		</div>
 		<div class="row" style="margin-top:16px;">
 			<div class="col-12">
