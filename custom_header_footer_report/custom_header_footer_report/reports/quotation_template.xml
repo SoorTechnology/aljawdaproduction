@@ -11,18 +11,18 @@
             <div class="header">
                 <div class="row">
                     <div class="col-3">
-                        <p style="color: white;">...</p>
-                        <center><p style="font-size: 17px;">عرض سعر </p>
+<!--                        <p style="color: white;">...</p>-->
+                        <center><p style="font-size: 16px;">عرض سعر </p>
                         <p style="font-size: 17px;">Quotation</p></center>
                     </div>
                     <div class="col-3" style="text-align:center;">
-                        <center><p>Q (Inv)</p></center>
+<!--                        <center><p>Q (Inv)</p></center>-->
                         <center><img class="rounded-circle" t-if="user.company_id.logo" t-att-src="image_data_uri(user.company_id.logo)" style="max-height:120px; max-width:310px;"/></center>
                     </div>
                     <div class="col-6" style="text-align:right;">
-                        <p style="color: white;">...</p>
-                        <p class="text-right" style="font-size: 17px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكــه </p>
-                        <p class="text-right" style="font-size: 16px;">Al-Jawda Al-Kuwaitiya for food Stuff and Vegetables and Fruit</p>
+<!--                        <p style="color: white;">...</p>-->
+                        <p class="text-right text-nowrap" style="font-size: 15px;">شركـةالجـودةالكويتية للموادالغذائية والخضاروالفواكــه </p>
+                        <p class="text-right text-nowrap" style="font-size: 15px;">Al-Jawda Al-Kuwaitiya for food Stuff and Vegetables and Fruit</p>
                     </div>
                 </div>
             </div>
@@ -247,14 +247,13 @@
 
                 <br/><br/><br/>
                 <div class="row">
-                    <div class="col-1"/>
                     <div class="col-3"><span>Approved byموافقة</span></div>
                     <div class="col-3"><span>Prepared by إعداد</span></div>
-                    <div class="col-5"><span>Receiver Name……………….………………إسم المستلم</span></div>
-                </div><br/><br/>
+                    <div class="col-6 text-nowrap text-right"><span>Receiver Name ……………….……………… إسم المستلم</span></div>
+                </div><br/><br/><br/>
                 <div class="row">
-                    <div class="col-7"/>
-                    <div class="col-5"><span>Signature …………………….………………… التوقيع</span></div>
+                    <div class="col-6"/>
+                    <div class="col-6 text-nowrap text-right"><span>Signature …………………….………………… التوقيع</span></div>
                 </div>
             </div>
         </div>

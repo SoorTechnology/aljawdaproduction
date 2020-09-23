@@ -1,6 +1,7 @@
 {
     'name': 'Custom PDF Report Header/Footer',
     'description': 'Customize the Invoice/Quotation/Sale order PDF layouts',
+    'version': '3.0.01',
     'author': 'Younis',
     'category': 'Custom',
     'depends': ['account'],
